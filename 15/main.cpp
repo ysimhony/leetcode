@@ -17,6 +17,11 @@ public:
         i = 0;
         while (i<nums.size() && nums[i] <= 0) {
             
+            /*
+            you might add simple continue statment instead of 
+incrmeneting i.
+            This way you avoid the need also for the break condition
+            */
             while (i > 0 && i<nums.size() && nums[i] == nums[i - 1] ) {
                 
                 i++;
